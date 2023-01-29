@@ -1,20 +1,24 @@
 import React from 'react'
-import "../../Web3Builders.css"
+
+function NavLink({ url, label }) {
+  return (
+    <a href={url} target="_blank" className="font-abel hover:text-violet-700 hover:text-xl transition-all duration-500 ease-in-out">{label}</a>
+  )
+}
 
 export default function BottomNavBar() {
+  const links = [
+    ["https://twitter.com/harvard_crypto", "TWITTER"],
+    ["", "ETHERSCAN"],
+    ["", "LENS"],
+    ["", "LINKEDIN"],
+    ["", "GITHUB"],
+  ]
   return (
-    <div className="section-16 wf-section">
-        <div className="div-block-43">
-            <div className="wide-div foot">
-                <a href="https://twitter.com/harvard_crypto" target="_blank" className="nav-link-1">TWITTER </a>
-                <a href="https://harvard.mirror.xyz/" target="_blank" className="nav-link-1">MIRROR </a>
-                <a href="https://etherscan.io/address/0x6477f082ed179739b9c6bc982ed946e99114b46e" target="_blank"
-                    className="nav-link-1">ETHERSCAN </a>
-                <a href="https://www.lensfrens.xyz/harvardblockchain.lens" target="_blank" className="nav-link-1">LENS </a>
-                <a href="https://www.linkedin.com/company/harvard-blockchain-club" target="_blank"
-                    className="nav-link-1">LINKEDIN </a>
-            </div>
-        </div>
+    <div className="mt-5 py-5 border-gray-200 border-2 box-border w-full">
+      <div className="flex justify-around text-lg">
+        {links.map(ele => <NavLink url={ele[0]} label={ele[1]} />)}
+      </div>
     </div>
   )
 }
