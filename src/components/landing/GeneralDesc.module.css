@@ -1,0 +1,20 @@
+.desc-container {
+  margin-top: 96px;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  gap: 32px;
+}
+
+.desc-section {
+  width: 30vw;
+}
+
+.desc-title {
+  font-size: 20px;
+  font-weight: 500;
+}
