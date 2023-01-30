@@ -1,10 +1,13 @@
 import React from 'react'
 import "../../Web3Builders.css"
 
+import { Web3Context } from '../../App'
 export default function TopNav() {
+    const { activate, deactivate, active, account } = React.useContext(Web3Context)
   return (
     <div className="navbar-logo-left wf-section" style={{'opacity': 1}}>
         <div className="wide-div">
+            {active && <div className='absolute'><i>{account}</i></div>}
             <div role="banner" className="navbar-logo-left-container shadow-three w-nav">
                 <div className="container-2">
                     <div className="navbar-wrapper">
