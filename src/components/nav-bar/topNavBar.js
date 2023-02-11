@@ -2,16 +2,18 @@ import React from 'react'
 import "../../Web3Builders.css"
 
 import { Web3Context } from '../../App'
+
+import Web3Bar from './web3Bar'
+
 export default function TopNav() {
     const { activate, deactivate, active, account } = React.useContext(Web3Context)
   return (
     <div className="navbar-logo-left wf-section" style={{'opacity': 1}}>
         <div className="wide-div">
-            {active && <div className='absolute'><i>{account}</i></div>}
             <div role="banner" className="navbar-logo-left-container shadow-three w-nav">
                 <div className="container-2">
                     <div className="navbar-wrapper">
-                        <a href="./Web3Builders.html" className="navbar-brand w-nav-brand">
+                        <a href="./." className="navbar-brand w-nav-brand">
                             <div className="text-block-6">
                                 WEB3<br></br>
                                 <span className="text-span-12">BUILDERS</span>
@@ -20,15 +22,15 @@ export default function TopNav() {
                         <nav role="navigation" className="nav-menu-wrapper w-nav-menu">
                             <ul role="list" className="nav-menu-two w-list-unstyled">
                                 <li>
-                                    <a href="./Web3Builders.html" target="_blank"
+                                    <a href="./" target="_blank"
                                         className="nav-link-1">W3B &nbsp;2023</a>
                                 </li>
                                 <li>
-                                    <a href="./Web3Builders.html" className="nav-link-1"
+                                    <a href="./" className="nav-link-1"
                                        >CONTACT</a>
                                 </li>
                                 <li>
-                                    <a href="./Web3Builders.html" target="_blank"
+                                    <a href="./" target="_blank"
                                         className="nav-link-1">DOCS</a>
                                 </li>
                             </ul>
