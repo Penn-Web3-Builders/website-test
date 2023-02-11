@@ -1,10 +1,18 @@
-.sponsors-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 64px;
+@media (min-width: 0px) {
+  .sponsors-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 84px;
+  }
+
+  .sponsors {
+    width: 950px;
+    max-width: 90%;
+  }
 }
 
-.sponsors {
-  width: 950px;
-  max-width: 90%;
+@media (min-width: 600px) {
+  .sponsors {
+    max-width: 80%;
+  }
 }

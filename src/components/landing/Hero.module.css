@@ -1,30 +1,118 @@
-.hero-container {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 148px;
-  width: 1200px;
-  height: 300px;
+@media (min-width: 0px) {
+  .hero-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 84px;
+    width: 90vw;
+    /* height: 300px; */
+  }
+
+  .hero-text {
+    /* width: 950px; */
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .header {
+    font-size: 36px;
+    line-height: normal;
+  }
+
+  .hero-description {
+    font-size: 20px;
+    margin-top: 48px;
+  }
+
+  .hero-cta {
+    margin-top: 48px;
+    font-size: 20px;
+  }
+
+  .hero-cta a {
+    text-decoration: none;
+    color: #ed1b34;
+  }
+
+  .hero-cta a:hover {
+    /* border-bottom: 2px solid black; */
+    color: black;
+  }
 }
 
-.hero-text {
-  width: 800px;
+@media (min-width: 600px) {
+  .hero-container {
+    margin-top: 132px;
+    width: 80vw;
+    height: 300px;
+  }
+
+  .hero-text {
+    /* width: 950px; */
+    /* margin-left: 60px;
+    margin-right: 60px; */
+  }
+
+  .header {
+    font-size: 46px;
+    line-height: normal;
+  }
+
+  .hero-description {
+    font-size: 20px;
+    margin-top: 48px;
+  }
+
+  .hero-cta {
+    margin-top: 48px;
+    font-size: 20px;
+  }
+
+  .hero-cta a {
+    text-decoration: none;
+    color: #ed1b34;
+  }
+
+  .hero-cta a:hover {
+    /* border-bottom: 2px solid black; */
+    color: black;
+  }
 }
 
-.header {
-  font-size: 46px;
-  line-height: normal;
-}
+@media (min-width: 1200px) {
+  .hero-container {
+    margin-top: 148px;
+    width: 1200px;
+    height: 300px;
+  }
 
-.hero-description {
-  font-size: 20px;
-  margin-top: 48px;
-}
+  .hero-text {
+    /* width: 950px; */
+    margin-left: 125px;
+    margin-right: 125px;
+  }
 
-.hero-cta {
-  margin-top: 48px;
-  font-size: 20px;
-}
+  .header {
+    font-size: 46px;
+    line-height: normal;
+  }
 
-.hero-cta a {
-  text-decoration: none;
+  .hero-description {
+    font-size: 20px;
+    margin-top: 48px;
+  }
+
+  .hero-cta {
+    margin-top: 48px;
+    font-size: 20px;
+  }
+
+  .hero-cta a {
+    text-decoration: none;
+    color: #ed1b34;
+  }
+
+  .hero-cta a:hover {
+    /* border-bottom: 2px solid black; */
+    color: black;
+  }
 }

@@ -5,12 +5,12 @@ const Hero = () => {
     <div className={classes["hero-container"]}>
       <div className={classes["hero-text"]}>
         <h1 className={classes["header"]}>
-          A TOP &nbsp;STUDENT-RUN <br />
-          BLOCKCHAIN INNOVATION&nbsp;HUB
+          BUILD IN WEB3 <br />
+          AT PENN.
         </h1>
         <p className={classes["hero-description"]}>
-          Build with some of the best in Web3, do &nbsp;cutting-edge research,
-          and find career opportunities through our deep industry connections.
+          Explore blockchain technology and the myriad of opportunities in Web3,
+          together.
         </p>
         <p className={classes["hero-cta"]}>
           <a

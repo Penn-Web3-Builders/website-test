@@ -5,43 +5,48 @@ const GeneralDesc = () => {
   return (
     <div className={classes["desc-container"]}>
       <div className={classes["desc-section"]}>
-        <img src={somePic} loading="lazy" alt="" />
+        <img className={classes["image"]} src={somePic} loading="lazy" alt="" />
+        <h4 className={classes["desc-title"]}>EDUCATION</h4>
+        <p>
+          We host our own panels, talks, and workshops, inviting speakers from
+          varying areas of expertise in the blockchain space, from investing to
+          engineering. Our workshop series walks beginners from zero-to-one
+          through topics such as Bitcoin, Ethereum, Solidity, ZK Proofs, and
+          Web3 Security. All resources are free and made available to the
+          public.
+        </p>
+      </div>
+      <div className={classes["desc-section"]}>
+        <img className={classes["image"]} src={somePic} alt="" />
+        <h4 className={classes["desc-title"]}>BUILDING</h4>
+        <p>
+          Build with the best and brightest at Penn in organized project groups
+          or individual endeavors all with the full support and resources of the
+          community. We hosted our very first hackathon this Fall, sponsored by
+          Filecoin, and look forward to offering more building opportunities. As
+          a community, we also attend hackathons hosted by other organizations.
+        </p>
+      </div>
+      <div className={classes["desc-section"]}>
+        <img className={classes["image"]} src={somePic} alt="" />
         <h4 className={classes["desc-title"]}>EVENTS</h4>
         <p>
-          We organize panels, talks, and workshops with some of the greatest
-          builders, investors, and researchers in the blockchain space. The
-          capstone of the year is our annual HBC conference, open to the broader
-          Philadelphia community.
+          We place an emphasis on community values and often host sponsored
+          dinners, study sessions, community events, trips, and more. Last
+          semester, we sent students to New York, Boston, and Lisbon to attend
+          leading blockchain conferences and connect with industry
+          professionals.
         </p>
       </div>
       <div className={classes["desc-section"]}>
-        <img src={somePic} alt="" />
-        <h4 className={classes["desc-title"]}>LABS</h4>
+        <img className={classes["image"]} src={somePic} alt="" />
+        <h4 className={classes["desc-title"]}>CAREER</h4>
         <p>
-          Join a community of Upenn's top builders in Web3. We host technical
-          workshops, organize blockchain-focused hackathons, build projects for
-          leading industry partners, and support Web3 startups in the Penn
-          ecosystem.
-        </p>
-      </div>
-      <div className={classes["desc-section"]}>
-        <img src={somePic} alt="" />
-        <h4 className={classes["desc-title"]}>101</h4>
-        <p>
-          A six-week introduction to foundational topics including blockchain,
-          smart contracts, DAOs, NFTs, DeFi, and more. Taught in small weekly
-          discussion groups, this is the best way to go from “zero-to-one” in
-          your knowledge of the space.
-        </p>
-      </div>
-      <div className={classes["desc-section"]}>
-        <img src={somePic} alt="" />
-        <h4 className={classes["desc-title"]}>TALENT</h4>
-        <p>
-          Our members benefit from our extensive hiring network, crypto-related
-          research projects with Harvard professors, and more. To date, we’ve
-          matched dozens of club members with internship and full-time job
-          opportunities.
+          We want to help leverage our extensive network ranging from crypto
+          funds to crypto payment solutions to help you land opportunities. We
+          keep an updated job board on our newsletter, and have invited speakers
+          from Galaxy Ventures, Curio.gg, The Brooker Group, and Binance Labs to
+          discuss opportunities in the industry.
         </p>
       </div>
     </div>
