@@ -11,9 +11,12 @@ export default function Web3Bar() {
     return (
         <div className='fixed h-6 bg-slate-800 w-screen' role="banner">
             <div className="wide-div mx-auto relative">
+                <div className='text-white absolute inset-y-0 right-0'>
+                    {!active && <button onClick={() => activate(Injected)}>Connect Wallet</button>}
+                    {active && <Link to="/web3">Wallet Page</Link>}
+                </div>
                 {active && <p className='text-white'>{account}</p>}
-                {!active && <button className='button text-white absolute inset-y-0 right-0' onClick={() => activate(Injected)}>Connect Wallet</button>}
-                {active && <Link className='button text-white absolute inset-y-0 right-0' to="/web3">Wallet Page</Link>}
+                {!active && <p className='text-white'>(Not Connected)</p>}
             </div>
         </div>
     )
