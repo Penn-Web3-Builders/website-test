@@ -14,5 +14,6 @@
 @media (min-width: 600px) {
   .sponsors {
     max-width: 80%;
+    margin-top: 132px;
   }
 }

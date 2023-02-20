@@ -1,11 +1,20 @@
 import somePic from "../../images/62fb0424f4027807fc5ccd1f_hbc-4.png";
+import Building from "../../images/building.png";
+import Career from "../../images/career.png";
+import Education from "../../images/education.png";
+import Events from "../../images/events.png";
 import classes from "./GeneralDesc.module.css";
 
 const GeneralDesc = () => {
   return (
     <div className={classes["desc-container"]}>
       <div className={classes["desc-section"]}>
-        <img className={classes["image"]} src={somePic} loading="lazy" alt="" />
+        <img
+          className={classes["image"]}
+          src={Education}
+          loading="lazy"
+          alt=""
+        />
         <h4 className={classes["desc-title"]}>EDUCATION</h4>
         <p>
           We host our own panels, talks, and workshops, inviting speakers from
@@ -17,7 +26,7 @@ const GeneralDesc = () => {
         </p>
       </div>
       <div className={classes["desc-section"]}>
-        <img className={classes["image"]} src={somePic} alt="" />
+        <img className={classes["image"]} src={Building} alt="" />
         <h4 className={classes["desc-title"]}>BUILDING</h4>
         <p>
           Build with the best and brightest at Penn in organized project groups
@@ -28,7 +37,7 @@ const GeneralDesc = () => {
         </p>
       </div>
       <div className={classes["desc-section"]}>
-        <img className={classes["image"]} src={somePic} alt="" />
+        <img className={classes["image"]} src={Events} alt="" />
         <h4 className={classes["desc-title"]}>EVENTS</h4>
         <p>
           We place an emphasis on community values and often host sponsored
@@ -39,7 +48,7 @@ const GeneralDesc = () => {
         </p>
       </div>
       <div className={classes["desc-section"]}>
-        <img className={classes["image"]} src={somePic} alt="" />
+        <img className={classes["image"]} src={Career} alt="" />
         <h4 className={classes["desc-title"]}>CAREER</h4>
         <p>
           We want to help leverage our extensive network ranging from crypto

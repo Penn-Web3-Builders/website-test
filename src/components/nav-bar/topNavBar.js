@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../Web3Builders.css";
 import Bars from "../../images/bars-solid.svg";
-
+import { NavLink, Link } from "react-router-dom";
 import classes from "./topNavBar.module.css";
 
 import { Web3Context } from "../../App";
@@ -24,10 +24,12 @@ export default function TopNav() {
   return (
     <div className={classes.navbar}>
       <div className={classes["navbar-mini"]}>
-        <div className={classes.logo}>
-          <p>WEB3</p>
-          <p className={classes.red}>BUILDERS</p>
-        </div>
+        <Link to="/">
+          <div className={classes.logo}>
+            <p>WEB3</p>
+            <p className={classes.red}>BUILDERS</p>
+          </div>
+        </Link>
         <div>
           <img
             src={Bars}
@@ -46,7 +48,9 @@ export default function TopNav() {
           <a href="https://www.web3builders.community/" target="_blank">
             <li>BLOG</li>
           </a>
-          <li>PARTNERSHIPS</li>
+          <li>
+            <NavLink to="partnerships">PARTNERSHIPS</NavLink>
+          </li>
           <li>CONTACT</li>
 
           {active ? (
