@@ -4,7 +4,10 @@ import Bars from "../../images/bars-solid.svg";
 import { NavLink, Link } from "react-router-dom";
 import classes from "./topNavBar.module.css";
 
-import { Web3Context } from "../../App";
+import { Web3Context } from '../../App'
+
+import Web3Bar from './web3Bar'
+
 export default function TopNav() {
   const { activate, deactivate, active, account } =
     React.useContext(Web3Context);
