@@ -1,14 +1,16 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Landing from './components/landing/landing';
-import Layout from './layout';
-import Web3 from './pages/web3';
+import Landing from "./components/landing/landing";
+import Layout from "./layout";
+import Web3 from "./pages/web3";
 
-import { useWeb3React } from '@web3-react/core'
+import { useWeb3React } from "@web3-react/core";
 import { InjectedConnector } from "@web3-react/injected-connector";
-
+import Partnerships from "./components/partnerships/Partnerships";
+import BlogTest from "./components/blog/BlogTest";
+import BlogPost from "./components/blog/BlogPost";
 
 export const Web3Context = React.createContext();
 
@@ -19,20 +21,23 @@ function App() {
   // },[]);
   return (
     <Web3Context.Provider value={{ activate, deactivate, active, account }}>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Landing />} />
-            <Route path="web3" element={<Web3 />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      {/* <BrowserRouter> */}
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Landing />} />
+          <Route path="web3" element={<Web3 />} />
+          <Route path="partnerships" element={<Partnerships />} />
+          <Route path="blog" element={<BlogTest />} />
+          <Route path="blog/:id" element={<BlogPost />} />
+        </Route>
+      </Routes>
+      {/* </BrowserRouter> */}
     </Web3Context.Provider>
   );
 }
 
 const Injected = new InjectedConnector({
-  supportedChainIds: [1, 3, 4, 5, 42]
- });
+  supportedChainIds: [1, 3, 4, 5, 42],
+});
 
 export default App;
